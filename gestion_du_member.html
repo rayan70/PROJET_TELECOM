@@ -7,24 +7,27 @@
   <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-  <header><img src="img/pngegg.png" alt=""></header>
+  <header><img src="img/pngegg.png" alt="Logo"></header>
   <section class="head">
     <h2>Tunisie-Telecom</h2>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="index.html">Gestion du congé</a>
-      <a href="gestion_du_member.html">Gestion du membre</a>
-      <a href="">Déconnexion</a>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html">Gestion du congé</a>
+        <a href="gestion_du_member.html">Gestion du membre</a>
+        <a href="#">Déconnexion</a>
+      </div>
     </nav>
   </section>
   <section class="members-section">
     <p>Membres</p>
     <div class="add-member">
       <input type="text" id="new-member-nom" placeholder="Nom">
-      <input type="text" id="new-member-prenom" placeholder="Prenom">
+      <input type="text" id="new-member-prenom" placeholder="Prénom">
       <input type="text" id="new-member-mat" placeholder="Matricule">
-      <input type="text" id="new-member-tele" placeholder="Telephone" maxlength="8" p="[0-9]{8}" required/>
-      <button id="add-member-btn">confirme</button>
+      <input type="text" id="new-member-tele" placeholder="Téléphone" maxlength="8" pattern="[0-9]{8}" required>
+      <button id="add-member-btn">Confirmer</button>
     </div>
     <table id="members-table">
       <thead>
@@ -39,17 +42,17 @@
       </thead>
       <tbody></tbody>
     </table>
-   <p>les binomes</p>
+    <p>Les binômes</p>
     <div class="ranger">
       <input type="text" id="new-member-nom2" placeholder="Nom 2">
       <input type="text" id="new-member-nom3" placeholder="Nom 3">
-      <button id="ranger-btn">confirme</button>
+      <button id="ranger-btn">Confirmer</button>
     </div>
     <table id="ranger_table">
       <thead>
         <tr>
-          <th>Nom du premier Member </th>
-          <th>Nom du deuxieme Member </th>
+          <th>Nom du premier membre</th>
+          <th>Nom du deuxième membre</th>
           <th>Supprimer</th>
         </tr>
       </thead>
@@ -57,5 +60,15 @@
     </table>
   </section>
   <script src="script.js"></script>
+  <script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+      var navLinks = document.getElementById('nav-links');
+      if (navLinks.style.display === 'block') {
+        navLinks.style.display = 'none';
+      } else {
+        navLinks.style.display = 'block';
+      }
+    });
+  </script>
 </body>
 </html>
