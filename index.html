@@ -15,17 +15,19 @@
         <img src="img/450491903_1035658001495760_3147968269164029727_n.jpg" alt="Slideshow" class="slide">
         <img src="img/451117699_1034610278170923_3397613430553570505_n.jpg" alt="Slideshow" class="slide">
       </div>
-     
     </div>
   </header>
 
   <section class="head">
     <h2>Tunisie-Telecom</h2>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="#">Gestion du congé</a>
-      <a href="gestion_du_member.html">Gestion du membre</a>
-      <a href="#">Déconnexion</a>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">Gestion du congé</a>
+        <a href="gestion_du_member.html">Gestion du membre</a>
+        <a href="#">Déconnexion</a>
+      </div>
     </nav>
   </section>
 
@@ -64,5 +66,15 @@
 
   <script src="script.js"></script>
   <script src="main.js"></script>
+  <script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+      var navLinks = document.getElementById('nav-links');
+      if (navLinks.style.display === 'block') {
+        navLinks.style.display = 'none';
+      } else {
+        navLinks.style.display = 'block';
+      }
+    });
+  </script>
 </body>
 </html>
