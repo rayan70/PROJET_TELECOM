@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="stylee.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="slideshow slideshow-container">
+                <img src="img/449953218_522458500120028_439892520485203522_n.jpg" alt="Slideshow" class="slide active">
+                <img src="img/450362370_1148653053062207_8416118468500862398_n.jpg" alt="Slideshow" class="slide">
+                <img src="img/450491903_1035658001495760_3147968269164029727_n.jpg" alt="Slideshow" class="slide">
+                <img src="img/451117699_1034610278170923_3397613430553570505_n.jpg" alt="Slideshow" class="slide">
+            </div>
+        </div>
+    </header>
+    <section class="head">
+        <h2>Tunisie-Telecom</h2>
+        <nav>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <div class="nav-links" id="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="#">Gestion du congé</a>
+                <a href="gestion_du_member.html">Gestion du membre</a>
+                <a href="#">Déconnexion</a>
+            </div>
+        </nav>
+    </section>
+    <section class="icons-section">
+        <div class="icon">
+            <a href="index.html">
+                <i class="fas fa-calendar-alt"></i>
+                <p>Gestion du congé</p>
+            </a>
+        </div>
+        <div class="icon">
+            <a href="gestion_du_member.html">
+                <i class="fas fa-users"></i>
+                <p>Gestion du membre</p>
+            </a>
+        </div>
+        <div class="icon">
+            <a href="#">
+                <i class="fas fa-sign-out-alt"></i>
+                <p>Déconnexion</p>
+            </a>
+        </div>
+    </section>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var navLinks = document.getElementById('nav-links');
+            if (navLinks.style.display === 'block') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'block';
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</body>
+</html>
