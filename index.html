@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="slideshow slideshow-container">
+        <img src="img/449953218_522458500120028_439892520485203522_n.jpg" alt="Slideshow" class="slide active">
+        <img src="img/450362370_1148653053062207_8416118468500862398_n.jpg" alt="Slideshow" class="slide">
+        <img src="img/450491903_1035658001495760_3147968269164029727_n.jpg" alt="Slideshow" class="slide">
+        <img src="img/451117699_1034610278170923_3397613430553570505_n.jpg" alt="Slideshow" class="slide">
+      </div>
+     
+    </div>
+  </header>
+
+  <section class="head">
+    <h2>Tunisie-Telecom</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Gestion du congé</a>
+      <a href="gestion_du_member.html">Gestion du membre</a>
+      <a href="#">Déconnexion</a>
+    </nav>
+  </section>
+
+  <section class="calendar-section">
+    <div id="rechercher">
+      <input type="date" id="search-date">
+      <button id="search-button">Rechercher</button>
+    </div>
+
+    <div id="calendar-nav">
+      <button id="prev-week">Précédent</button>
+      <span id="current-month-year"></span>
+      <button id="next-week">Suivant</button>
+    </div>
+
+    <div id="calendar-container">
+      <div id="calendar"></div>
+    </div>
+  </section>
+
+  <div id="event-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="event-form">
+        <label for="event-title">Event Title</label>
+        <input type="text" id="event-title" name="event-title" required>
+        <label for="event-date">Event Date</label>
+        <input type="date" id="event-date" name="event-date" required>
+        <label for="event-member">Event Member</label>
+        <input type="text" id="event-member" name="event-member" required>
+        <button type="submit">Save Event</button>
+        <button type="button" id="delete-event">Delete Event</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

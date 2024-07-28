@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Management</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <header><img src="img/pngegg.png" alt=""></header>
+  <section class="head">
+    <h2>Tunisie-Telecom</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html">Gestion du congé</a>
+      <a href="gestion_du_member.html">Gestion du membre</a>
+      <a href="">Déconnexion</a>
+    </nav>
+  </section>
+  <section class="members-section">
+    <p>Membres</p>
+    <div class="add-member">
+      <input type="text" id="new-member-nom" placeholder="Nom">
+      <input type="text" id="new-member-prenom" placeholder="Prenom">
+      <input type="text" id="new-member-mat" placeholder="Matricule">
+      <input type="text" id="new-member-tele" placeholder="Telephone" maxlength="8" p="[0-9]{8}" required/>
+      <button id="add-member-btn">confirme</button>
+    </div>
+    <table id="members-table">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Matricule</th>
+          <th>Téléphone</th>
+          <th>Modifier</th>
+          <th>Supprimer</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+   <p>les binomes</p>
+    <div class="ranger">
+      <input type="text" id="new-member-nom2" placeholder="Nom 2">
+      <input type="text" id="new-member-nom3" placeholder="Nom 3">
+      <button id="ranger-btn">confirme</button>
+    </div>
+    <table id="ranger_table">
+      <thead>
+        <tr>
+          <th>Nom du premier Member </th>
+          <th>Nom du deuxieme Member </th>
+          <th>Supprimer</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

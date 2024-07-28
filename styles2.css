@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background */
+  }
+  
+  /* Header Styles */
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(2, 174, 193, 0.825));
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    border-top: #0f8bc0;
+  }
+  
+  .head img {
+    margin-left: 20px;
+    width: 100px;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .head h2 {
+    color: #333;
+    margin-right: 20px;
+  }
+  
+  .head nav a {
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .head nav a:hover {
+    color: #0f652f;
+  }
+  
+  /* Images - Responsive Behavior */
+  img {
+    max-width: 10%; /* Scale down for small screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 90%; /* Center and add bottom margin on all screens */
+  }
+  
+  /* Media Queries for Small Screens */
+  @media (max-width: 768px) {
+    /* Header Adjustments */
+    .head {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center content horizontally */
+      text-align: center; /* Center text if needed */
+    }
+  
+    .head img {
+      margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+  
+    .head h2 {
+      margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+  
+    /* Labels */
+    label {
+      margin: 10px; /* Adjust margin for smaller screens */
+    }
+  
+    /* Inputs */
+    input {
+      width: 100%; /* Make inputs full width */
+    }
+  
+    /* Add Member Section */
+    .add-member {
+      text-align: center; /* Center content if needed */
+    }
+  
+    /* Buttons */
+    button {
+      width: 80%; /* Adjust button width for smaller screens */
+      margin: 20px auto; /* Center button horizontally and add margin */
+    }
+  }
+  
+  /* Other Styles (unchanged) */
+  .members-section p {
+    text-align: center;
+    color: rgb(23, 18, 18);
+  }
+  
+  label {
+    color: #13052b;
+    margin: 20px;
+    transform: scale(1.1);
+  }
+  
+  input {
+    width: 60%;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: rgb(0, 0, 0);
+  }
+  
+  input:focus {
+    background-color: #ffffff;
+    transform: scale(1.1);
+  }
+  
+  .add-member {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-left: 20px;
+  }
+  
+  button {
+    margin-top: 50px;
+    width: 50%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(99, 188, 215);
+  }
+  
+  button:hover {
+    background-color: rgb(50, 135, 204);
+    transition: 1s;
+    color: aliceblue;
+    letter-spacing: 1px;
+  }
+  
+  /* Table Styles */
+  #members-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+  
+  #members-table th, #members-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #members-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  #members-table td {
+    text-align: center;
+  }
+  #ranger_table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  #ranger_table td {
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    margin: 50px;
+    font-size: 40px;
+    border: #333;
+    text-decoration: solid;
+  }
+  
+  #ranger_table{
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+  }
+  #ranger_table th, #ranger_table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+.ranger{
+  margin: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-left: 20px;
+}
