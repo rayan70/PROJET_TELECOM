@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     function startImageSlideshow() {
       var images = [
-        'img/449953218_522458500120028_439892520485203522_n.jpg',
-        'img/450362370_1148653053062207_8416118468500862398_n.jpg',
-        'img/450491903_1035658001495760_3147968269164029727_n.jpg',
-        'img/451117699_1034610278170923_3397613430553570505_n.jpg'
+        "img/145812063633_content.jpg",
+        "img/167905242399_content.jpg",
+        'img/ceo-221021-00.jpg',
+        'img/Netbox-TT-570x356-pxl.png',
+        "img/tt-tunisie-telecome-challenges-tn.jpg",
+        'img/Tunisie-Telecom-Horaires-double-séance.jpg',
+        'img/Tunisie-Telecom.png'
         // Add more image paths as needed
       ];
       var slideshowContainer = document.querySelector('.slideshow');

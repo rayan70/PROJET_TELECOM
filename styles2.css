@@ -153,3 +153,43 @@ header img {
     margin: 20px auto;
   }
 }
+footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(2, 174, 193, 0.825));
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+}
+footer h3 {
+  color: #333;
+  margin-left: 80%;
+}
+.slideshow {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+}

@@ -240,3 +240,21 @@ body {
   }
 }
 
+footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(2, 174, 193, 0.825));
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+}
+footer h3 {
+  color: #333;
+  margin-left: 80%;
+}

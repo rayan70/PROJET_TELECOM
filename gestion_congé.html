@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="slideshow slideshow-container">
+          <img src="img/145812063633_content.jpg" alt="Slideshow" class="slide active">
+          <img src="img/167905242399_content.jpg" alt="Slideshow" class="slide">
+          <img src="img/ceo-221021-00.jpg" alt="Slideshow" class="slide">
+          <img src="img/Netbox-TT-570x356-pxl.png" alt="Slideshow" class="slide">
+          <img src="img/tt-tunisie-telecome-challenges-tn.jpg" alt="Slideshow" class="slide">
+          <img src="img/Tunisie-Telecom-Horaires-double-séance.jpg" alt="Slideshow" class="slide">
+          <img src="img/Tunisie-Telecom.png" alt="Slideshow" class="slide">
+      </div>
+  </div>
+  </header>
+
+  <section class="head">
+    <h2>Tunisie-Telecom</h2>
+    <nav>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">Gestion du congé</a>
+        <a href="gestion_du_member.html">Gestion du membre</a>
+        <a href="#">Déconnexion</a>
+      </div>
+    </nav>
+  </section>
+
+  <section class="calendar-section">
+    <div id="rechercher">
+      <input type="date" id="search-date">
+      <button id="search-button">Rechercher</button>
+    </div>
+
+    <div id="calendar-nav">
+      <button id="prev-week">Précédent</button>
+      <span id="current-month-year"></span>
+      <button id="next-week">Suivant</button>
+    </div>
+
+    <div id="calendar-container">
+      <div id="calendar"></div>
+    </div>
+  </section>
+
+  <div id="event-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="event-form">
+        <label for="event-title">Event Title</label>
+        <input type="text" id="event-title" name="event-title" required>
+        <label for="event-date">Event Date</label>
+        <input type="date" id="event-date" name="event-date" required>
+        <label for="event-member">Event Member</label>
+        <input type="text" id="event-member" name="event-member" required>
+        <button type="submit">Save Event</button>
+        <button type="button" id="delete-event">Delete Event</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+      var navLinks = document.getElementById('nav-links');
+      if (navLinks.style.display === 'block') {
+        navLinks.style.display = 'none';
+      } else {
+        navLinks.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+<footer>
+  <h3>contcter support : 20842876</h3>
+</footer>
+</html>
